@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -12,8 +12,8 @@
             rel="stylesheet"
             href="assets/vendor/bootstrap/css/bootstrap.min.css"
     />
-    <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/libs/css/style.css" />
+    <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/libs/css/style.css"/>
     <link
             rel="stylesheet"
             href="assets/vendor/fonts/fontawesome/css/fontawesome-all.css"
@@ -30,7 +30,7 @@
             rel="stylesheet"
             href="assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css"
     />
-    <link rel="stylesheet" href="assets/vendor/charts/c3charts/c3.css" />
+    <link rel="stylesheet" href="assets/vendor/charts/c3charts/c3.css"/>
     <link
             rel="stylesheet"
             href="assets/vendor/fonts/flag-icon-css/flag-icon.min.css"
@@ -102,7 +102,8 @@
         <div class="menu-list">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="d-xl-none d-lg-none" href="#">Administration</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -110,7 +111,10 @@
                         <li class="nav-divider">
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link active" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"></i>Administration <span class="badge badge-success">6</span></a>
+                            <a class="nav-link active" href="#" data-toggle="collapse" aria-expanded="false"
+                               data-target="#submenu-1" aria-controls="submenu-1"><i
+                                    class="fa fa-fw fa-user-circle"></i>Administration <span
+                                    class="badge badge-success">6</span></a>
                             <div id="submenu-1" class="collapse submenu" style="">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
@@ -123,7 +127,8 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2"><i class="fa fa-fw fa-users"></i>Manager</a>
+                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+                               data-target="#submenu-2" aria-controls="submenu-2"><i class="fa fa-fw fa-users"></i>Manager</a>
                             <div id="submenu-2" class="collapse submenu" style="">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
@@ -131,6 +136,20 @@
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="project-status.html">Project Status</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+                               data-target="#submenu-3" aria-controls="submenu-3"><i class="fas fa-fw fa-user"></i>Employee</a>
+                            <div id="submenu-3" class="collapse submenu" style="">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="pending-tasks.html">Pending Tasks</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="archive.html">Archive</a>
                                     </li>
                                 </ul>
                             </div>
@@ -146,7 +165,168 @@
                 <!-- ============================================================== -->
                 <!-- pageheader  -->
                 <!-- ============================================================== -->
-                <h1>User Create Page</h1>
+                <div class="page-section">
+                    <h1 align="left">User Create</h1>
+                    <div class="align-baseline">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="first-name">First Name</label>
+                                        <input id="first-name" type="text" placeholder="First Name"
+                                               class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="last-name">Last Name</label>
+                                        <input id="last-name" type="text" placeholder="Last Name" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="email">Email address</label>
+                                        <input id="email" type="email" placeholder="email address" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="mobile-number" class="col-form-label">Mobile Number</label>
+                                        <input id="mobile-number" type="number" class="form-control"
+                                               placeholder="Mobile Number">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="password">Password</label>
+                                        <input id="password" type="password" placeholder="password"
+                                               class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="password-confirmation">Password Confirmation</label>
+                                        <input id="password-confirmation" type="password"
+                                               placeholder="re-enter password" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-4">
+                                    <div class="row justify-content-start">
+                                        <label for="role">Gender</label>
+                                    </div>
+                                    <div class="row justify-content-start">
+                                        <label class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" name="radio-inline" checked=""
+                                                   class="custom-control-input"><span
+                                                class="custom-control-label">Male</span>
+                                        </label>
+                                        <label class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" name="radio-inline" class="custom-control-input"><span
+                                                class="custom-control-label">Female</span>
+                                        </label>
+                                    </div>
+
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="role">Role</label>
+                                        <select class="form-control" id="role">
+                                            <option value="none" selected disabled hidden>
+                                                Select
+                                            </option>
+                                            <option>Admin</option>
+                                            <option>Manager</option>
+                                            <option>Employee</option>
+                                        </select>
+
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="button" class="btn btn-success float-right">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page-section">
+                    <h1 align="left">User List</h1>
+                    <div class="align-items-lg-start">
+                        <div class="col-xl-12 col-lg-12 col-md-24 col-sm-24 col-24">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">E-Mail(username)</th>
+                                    <th scope="col">Gender</th>
+                                    <th scope="col">Phone</th>
+                                    <th scope="col">Role</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>John Kesy</td>
+                                    <td>admin@stp.com</td>
+                                    <td>Male</td>
+                                    <td>4121231234</td>
+                                    <td>Admin</td>
+                                    <td>
+                                        <a href="#" class="btn btn-warning" style="color: black">Update</a>
+                                        <a href="#" class="btn btn-danger" style="color: white">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Delisa Norre</td>
+                                    <td>manager@stp.com</td>
+                                    <td>Female</td>
+                                    <td>4121231233</td>
+                                    <td>Manager</td>
+                                    <td>
+                                        <a href="#" class="btn btn-warning" style="color: black">Update</a>
+                                        <a href="#" class="btn btn-danger" style="color: white">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Craig Jark</td>
+                                    <td>employee@stp.com</td>
+                                    <td>Male</td>
+                                    <td>4121231232</td>
+                                    <td>Employee</td>
+                                    <td>
+                                        <a href="#" class="btn btn-warning" style="color: black">Update</a>
+                                        <a href="#" class="btn btn-danger" style="color: white">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Sean Fitzgerald</td>
+                                    <td>employee@stp.com</td>
+                                    <td>Male</td>
+                                    <td>4121231231</td>
+                                    <td>Employee</td>
+                                    <td>
+                                        <a href="#" class="btn btn-warning" style="color: black">Update</a>
+                                        <a href="#" class="btn btn-danger" style="color: white">Delete</a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- ============================================================== -->
                 <!-- end pageheader  -->
                 <!-- ============================================================== -->
