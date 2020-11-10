@@ -38,6 +38,9 @@
     <title>STP - User Create</title>
 </head>
 <body>
+=================== -->
+<!-- main wrapper -->
+<!-- ============================================================== -->
 <div class="dashboard-main-wrapper">
     <!-- ============================================================== -->
     <!-- navbar -->
@@ -115,10 +118,10 @@
                                data-target="#submenu-1" aria-controls="submenu-1"><i
                                     class="fa fa-fw fa-user-circle"></i>Administration <span
                                     class="badge badge-success">6</span></a>
-                            <div id="submenu-1" class="collapse submenu" style="">
+                            <div id="submenu-1" class="submenu collapse show" style="">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="user-create.html">User Create</a>
+                                        <a class="nav-link active" href="user-create.html">User Create</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="project-create.html">Project Create</a>
@@ -159,196 +162,198 @@
             </nav>
         </div>
     </div>
+    <!-- ============================================================== -->
+    <!-- end left sidebar -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- wrapper  -->
+    <!-- ============================================================== -->
     <div class="dashboard-wrapper">
-        <div class="dashboard-user-create">
+        <div class="dashboard-ecommerce">
             <div class="container-fluid dashboard-content">
                 <!-- ============================================================== -->
                 <!-- pageheader  -->
                 <!-- ============================================================== -->
-
-
-                <!-- ============================================================== -->
-                <!-- User Create Section  -->
-                <!-- ============================================================== -->
-                <div class="page-section">
-                    <h1 align="left">User Create</h1>
-                    <div class="row">
-                        <div class="col-sm-9">
-                            <div class="container">
-                                <div class="row justify-content-start">
-                                    <div class="col-4">
-                                        <div class="form-group">
-                                            <label for="first-name">First Name</label>
-                                            <input id="first-name" type="text" placeholder="First Name"
-                                                   class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="form-group">
-                                            <label for="last-name">Last Name</label>
-                                            <input id="last-name" type="text" placeholder="Last Name"
-                                                   class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="container">
-                                <div class="row justify-content-start">
-                                    <div class="col-4">
-                                        <div class="form-group">
-                                            <label for="email">Email address</label>
-                                            <input id="email" type="email" placeholder="email address"
-                                                   class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="form-group">
-                                            <label for="mobile-number" class="col-form-label">Mobile Number</label>
-                                            <input id="mobile-number" type="number" class="form-control"
-                                                   placeholder="Mobile Number">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="container">
-                                <div class="row justify-content-start">
-                                    <div class="col-4">
-                                        <div class="form-group">
-                                            <label for="password">Password</label>
-                                            <input id="password" type="password" placeholder="password"
-                                                   class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="form-group">
-                                            <label for="password-confirmation">Password Confirmation</label>
-                                            <input id="password-confirmation" type="password"
-                                                   placeholder="re-enter password" class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="container">
-                                <div class="row justify-content-start">
-                                    <div class="col-4">
-                                        <div class="row justify-content-start">
-                                            <label for="role">Gender</label>
-                                        </div>
-                                        <div class="row justify-content-start">
-                                            <label class="custom-control custom-radio custom-control-inline" >
-                                                <input type="radio" name="radio-inline" checked=""
-                                                       class="custom-control-input"><span
-                                                    class="custom-control-label">Male</span>
-                                            </label>
-                                            <label class="custom-control custom-radio custom-control-inline">
-                                                <input type="radio" name="radio-inline"
-                                                       class="custom-control-input"><span
-                                                    class="custom-control-label">Female</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="form-group">
-                                            <label for="role">Role</label>
-                                            <select class="form-control" id="role">
-                                                <option value="none" selected disabled hidden>
-                                                    Select
-                                                </option>
-                                                <option>Admin</option>
-                                                <option>Manager</option>
-                                                <option>Employee</option>
-                                            </select>
-
-                                        </div>
-                                        <div class="form-group">
-                                            <button type="button" class="btn btn-success float-right">Save</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3"></div>
-                    </div>
-                </div>
-
-                <!-- ============================================================== -->
-                <!-- User List Section  -->
-                <!-- ============================================================== -->
-                <div class="page-section">
-                    <h1 align="left">User List</h1>
-                    <div class="align-items-lg-start">
-                        <div class="col-xl-12 col-lg-12 col-md-24 col-sm-24 col-24">
-                            <table class="table table-striped">
-                                <thead>
-                                <tr>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">E-Mail(username)</th>
-                                    <th scope="col">Gender</th>
-                                    <th scope="col">Phone</th>
-                                    <th scope="col">Role</th>
-                                    <th scope="col">Action</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>John Kesy</td>
-                                    <td>admin@stp.com</td>
-                                    <td>Male</td>
-                                    <td>4121231234</td>
-                                    <td>Admin</td>
-                                    <td>
-                                        <a href="#" class="btn btn-warning" style="color: black">Update</a>
-                                        <a href="#" class="btn btn-danger" style="color: white">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Delisa Norre</td>
-                                    <td>manager@stp.com</td>
-                                    <td>Female</td>
-                                    <td>4121231233</td>
-                                    <td>Manager</td>
-                                    <td>
-                                        <a href="#" class="btn btn-warning" style="color: black">Update</a>
-                                        <a href="#" class="btn btn-danger" style="color: white">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Craig Jark</td>
-                                    <td>employee@stp.com</td>
-                                    <td>Male</td>
-                                    <td>4121231232</td>
-                                    <td>Employee</td>
-                                    <td>
-                                        <a href="#" class="btn btn-warning" style="color: black">Update</a>
-                                        <a href="#" class="btn btn-danger" style="color: white">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Sean Fitzgerald</td>
-                                    <td>employee@stp.com</td>
-                                    <td>Male</td>
-                                    <td>4121231231</td>
-                                    <td>Employee</td>
-                                    <td>
-                                        <a href="#" class="btn btn-warning" style="color: black">Update</a>
-                                        <a href="#" class="btn btn-danger" style="color: white">Delete</a>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="page-header" id="top">
+                            <h2 class="pageheader-title">User Create</h2>
                         </div>
                     </div>
                 </div>
-
                 <!-- ============================================================== -->
                 <!-- end pageheader  -->
                 <!-- ============================================================== -->
-            </div>
-        </div>
-        <!-- ============================================================== -->
 
-        <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-lg-6 col-sm-6">
+                        <form>
+
+                            <div class="row">
+                                <div class="col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <label for="first-name" class="col-form-label">First Name</label>
+                                        <input id="first-name" type="text" placeholder="first name"
+                                               class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <label for="last-name" class="col-form-label">Last Name</label>
+                                        <input id="last-name" type="text" placeholder="last name" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <label for="email-address" class="col-form-label">Email Address</label>
+                                        <input id="email-address" type="email" placeholder="email address"
+                                               class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <label for="phone-number" class="col-form-label">Phone Number</label>
+                                        <input id="phone-number" type="text" placeholder="phone number"
+                                               class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <label for="password" class="col-form-label">Password</label>
+                                        <input id="password" type="password" placeholder="password"
+                                               class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <label for="re-password" class="col-form-label">Confirm Password</label>
+                                        <input id="re-password" type="password" placeholder="confirm your password"
+                                               class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <label>Gender</label><br>
+                                        <label class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" name="radio-inline" checked="" class="custom-control-input"><span class="custom-control-label">Male</span>
+                                        </label>
+                                        <label class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" name="radio-inline" class="custom-control-input"><span class="custom-control-label">Female</span>
+                                        </label>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <label>Choose a Role</label>
+                                        <select name="roleid" id="roleid" class="custom-select" required="required">
+                                            <option value="select" selected disabled hidden>
+                                                Select
+                                            </option>
+                                            <option value="admin">Admin</option>
+                                            <option value="manager">Manager</option>
+                                            <option value="employee">Employee</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-md-6 col-lg-12">
+                                    <div class="float-right">
+                                        <button type="button" class="btn btn-success">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- ============================================================== -->
+                    <!-- User List  -->
+                    <!-- ============================================================== -->
+                    <div class="col-lg-12 col-sm-12">
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="page-header">
+                                    <h2 class="pageheader-title">User List</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Email(username)</th>
+                                <th scope="col">Gender</th>
+                                <th scope="col">Phone</th>
+                                <th scope="col">Role</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Ozzy</td>
+                                <td>ozzy@stp.com</td>
+                                <td>Male</td>
+                                <td>2022023333</td>
+                                <td>Employee</td>
+                                <td class="actions">
+                                    <a href=""><button type="button" class="btn btn-warning btn-sm">Update</button></a>
+                                    <a href="" class="delete-row"><button type="button" class="btn btn-secondary btn-sm">Delete</button></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Ozzy</td>
+                                <td>ozzy@stp.com</td>
+                                <td>Male</td>
+                                <td>2022023333</td>
+                                <td>Employee</td>
+                                <td class="actions">
+                                    <a href=""><button type="button" class="btn btn-warning btn-sm">Update</button></a>
+                                    <a href="" class="delete-row"><button type="button" class="btn btn-secondary btn-sm">Delete</button></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Ozzy</td>
+                                <td>ozzy@stp.com</td>
+                                <td>Male</td>
+                                <td>2022023333</td>
+                                <td>Employee</td>
+                                <td class="actions">
+                                    <a href=""><button type="button" class="btn btn-warning btn-sm">Update</button></a>
+                                    <a href="" class="delete-row"><button type="button" class="btn btn-secondary btn-sm">Delete</button></a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- ============================================================== -->
+                    <!-- end User List  -->
+                    <!-- ============================================================== -->
+                </div>
+            </div>
+            <!-- footer -->
+            <footer class="page-footer font-small blue fixed-bottom">
+                <div class="footer-copyright text-center py-3">© 2020 Serik Batyrkhanov – All Rights Reserved</div>
+            </footer>
+        </div>
     </div>
+<!-- ============================================================== -->
+<!-- end wrapper  -->
+<!-- ============================================================== -->
 </div>
 <!-- ============================================================== -->
 <!-- end main wrapper  -->
