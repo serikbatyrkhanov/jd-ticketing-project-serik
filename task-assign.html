@@ -159,11 +159,167 @@
                 <!-- ============================================================== -->
                 <!-- pageheader  -->
                 <!-- ============================================================== -->
-                <h1>Task Assign Page</h1>
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="page-header" id="top">
+                            <h2 class="pageheader-title">Task Assign</h2>
+                        </div>
+                    </div>
+                </div>
                 <!-- ============================================================== -->
                 <!-- end pageheader  -->
                 <!-- ============================================================== -->
+
+                <div class="row">
+                    <div class="col-lg-6 col-sm-6">
+                        <form>
+
+                            <div class="row">
+                                <div class="col-lg-6 col-lg-6">
+                                    <div class="form-group">
+                                        <label>Project</label>
+                                        <select name="project" id="project" class="custom-select"
+                                                required="required">
+                                            <option value="select" selected disabled hidden>
+                                                Select
+                                            </option>
+                                            <option value="manager1">PRJ001</option>
+                                            <option value="manager2">PRJ002</option>
+                                            <option value="manager3">PRJ003</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 col-lg-6">
+                                    <div class="form-group">
+                                        <label>Assigned Employee</label>
+                                        <select name="assigned-employee" id="assigned-employee" class="custom-select"
+                                                required="required">
+                                            <option value="select" selected disabled hidden>
+                                                Select
+                                            </option>
+                                            <option value="manager1">EMP1</option>
+                                            <option value="manager2">EMP2</option>
+                                            <option value="manager3">EMP3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 col-lg-6">
+                                    <div class="form-group">
+                                        <label for="task-subject" class="col-form-label">Task Subject</label>
+                                        <input id="task-subject" type="text"
+                                               class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6 col-md-6">
+
+                                    <div class="form-group">
+                                        <label for="details">Details</label>
+                                        <textarea class="form-control" id="details" rows="3"></textarea>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6 col-md-6 col-lg-6">
+                                    <div class="float-right">
+                                        <button type="button" class="btn btn-success">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- ============================================================== -->
+                    <!-- Task List  -->
+                    <!-- ============================================================== -->
+                    <div class="col-lg-12 col-sm-12">
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="page-header">
+                                    <h2 class="pageheader-title">Task List</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th scope="col">Project</th>
+                                <th scope="col">Task Subject</th>
+                                <th scope="col">Assigned Employee</th>
+                                <th scope="col">Assigned Date</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">#Action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>PRJ001-HR CRM</td>
+                                <td>DB Connections</td>
+                                <td>John York</td>
+                                <td>11.03.2020</td>
+                                <td>In Progress</td>
+                                <td class="actions">
+                                    <a href="">
+                                        <button type="button" class="btn btn-warning btn-sm">Update</button>
+                                    </a>
+                                    <a href="" class="delete-row">
+                                        <button type="button" class="btn btn-secondary btn-sm">Delete</button>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>PRJ001-HR CRM</td>
+                                <td>DB Connections</td>
+                                <td>John York</td>
+                                <td>11.03.2020</td>
+                                <td>In Progress</td>
+                                <td class="actions">
+                                    <a href="">
+                                        <button type="button" class="btn btn-warning btn-sm">Update</button>
+                                    </a>
+                                    <a href="" class="delete-row">
+                                        <button type="button" class="btn btn-secondary btn-sm">Delete</button>
+                                    </a>
+                                </td>
+                            </tr><tr>
+                                <td>PRJ001-HR CRM</td>
+                                <td>DB Connections</td>
+                                <td>John York</td>
+                                <td>11.03.2020</td>
+                                <td>In Progress</td>
+                                <td class="actions">
+                                    <a href="">
+                                        <button type="button" class="btn btn-warning btn-sm">Update</button>
+                                    </a>
+                                    <a href="" class="delete-row">
+                                        <button type="button" class="btn btn-secondary btn-sm">Delete</button>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- ============================================================== -->
+                    <!-- end Task List  -->
+                    <!-- ============================================================== -->
+                </div>
             </div>
+            <!-- footer -->
+            <footer class="page-footer font-small blue fixed-bottom">
+                <div class="footer-copyright text-center py-3">© 2020 Serik Batyrkhanov – All Rights Reserved</div>
+            </footer>
         </div>
         <!-- ============================================================== -->
 
